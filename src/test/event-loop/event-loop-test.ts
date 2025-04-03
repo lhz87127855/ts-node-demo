@@ -10,6 +10,10 @@ const test1 = () => {
   }).then((res) => {
     a = res + a;
     console.log('==test 2==', a);
+    return a
+  }).then((res) => {
+    a = res + 1;
+    console.log('==test 2a==', a);
   });
   setTimeout(() => {
     console.log('==test 3==', a++);
